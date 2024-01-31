@@ -13,6 +13,7 @@
 		878C3F6E2B685E14009C5DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878C3F6D2B685E14009C5DFF /* Assets.xcassets */; };
 		878C3F712B685E14009C5DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878C3F6F2B685E14009C5DFF /* LaunchScreen.storyboard */; };
 		878C3F792B685E7B009C5DFF /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878C3F782B685E7B009C5DFF /* CardSelectionVC.swift */; };
+		8796132B2B6ADEF200797C26 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796132A2B6ADEF200797C26 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		878C3F702B685E14009C5DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		878C3F722B685E14009C5DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878C3F782B685E7B009C5DFF /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		8796132A2B6ADEF200797C26 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				878C3F642B685E13009C5DFF /* AppDelegate.swift */,
 				878C3F662B685E13009C5DFF /* SceneDelegate.swift */,
 				878C3F782B685E7B009C5DFF /* CardSelectionVC.swift */,
+				8796132A2B6ADEF200797C26 /* Deck.swift */,
 				878C3F6A2B685E13009C5DFF /* Main.storyboard */,
 				878C3F6D2B685E14009C5DFF /* Assets.xcassets */,
 				878C3F6F2B685E14009C5DFF /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8796132B2B6ADEF200797C26 /* Deck.swift in Sources */,
 				878C3F652B685E13009C5DFF /* AppDelegate.swift in Sources */,
 				878C3F672B685E13009C5DFF /* SceneDelegate.swift in Sources */,
 				878C3F792B685E7B009C5DFF /* CardSelectionVC.swift in Sources */,
