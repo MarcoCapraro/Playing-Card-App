@@ -25,17 +25,18 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIP-KB-spc">
                                 <rect key="frame" x="66.666666666666686" y="551" width="260" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="K46-oC-154"/>
                                     <constraint firstAttribute="height" constant="50" id="j15-03-bBq"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Stop!">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSD-QI-v8k"/>
+                                    <action selector="startStopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fm2-d7-1Au"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCg-4y-aJ8">
@@ -47,7 +48,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Restart">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kg3-8j-FAl"/>
@@ -64,7 +65,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAw-oT-Gre"/>
                                     <segue destination="clQ-p4-gTU" kind="presentation" id="h3j-YW-uD3"/>
                                 </connections>
                             </button>
@@ -84,6 +84,7 @@
                     </view>
                     <connections>
                         <outlet property="cardImageView" destination="sif-I5-rKb" id="GQh-GC-3eF"/>
+                        <outlet property="startStopButton" destination="xIP-KB-spc" id="j2Z-e4-9HN"/>
                         <outletCollection property="buttons" destination="xIP-KB-spc" collectionClass="NSMutableArray" id="2h5-xa-QkJ"/>
                         <outletCollection property="buttons" destination="JCg-4y-aJ8" collectionClass="NSMutableArray" id="gt3-v7-J9O"/>
                         <outletCollection property="buttons" destination="t1h-EO-NHZ" collectionClass="NSMutableArray" id="rgA-Iu-su2"/>
@@ -165,8 +166,8 @@
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
