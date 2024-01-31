@@ -8,22 +8,35 @@
 import UIKit
 
 class CardSelectionVC: UIViewController {
-
+    
+    // Make sure Outlets have strong references (RECOMMENDED)
+    // Outlets: What gives you access to the object in code to make changes
+    @IBOutlet var cardImageView: UIImageView!
+    @IBOutlet var buttons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        for button in buttons {
+            button.layer.cornerRadius = 8
+        }
+
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // Action: What occurs when button is tapped
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
     }
-    */
-
+    
+    @IBAction func restartButtonTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func rulesButtonTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func unwindRulesSegue(unwindSegue: UIStoryboardSegue) {
+        // Do nothing but dismiss rules VC
+    }
+    
 }
