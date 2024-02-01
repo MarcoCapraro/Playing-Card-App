@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,17 +24,17 @@
                                     <constraint firstAttribute="height" constant="350" id="dB5-ZT-nsy"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIP-KB-spc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIP-KB-spc">
                                 <rect key="frame" x="66.666666666666686" y="551" width="260" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="K46-oC-154"/>
                                     <constraint firstAttribute="height" constant="50" id="j15-03-bBq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Start!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="arrowshape.forward" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
                                     <action selector="startStopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fm2-d7-1Au"/>
@@ -46,7 +47,7 @@
                                     <constraint firstAttribute="width" constant="115" id="iu3-qn-VBt"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Restart">
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.clockwise" catalog="system" title="Restart" imagePadding="1">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
@@ -61,7 +62,7 @@
                                     <constraint firstAttribute="width" constant="115" id="cDp-Ck-kud"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Rules">
+                                <buttonConfiguration key="configuration" style="filled" image="list.bullet.clipboard" catalog="system" title="Rules" imagePadding="1">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -157,6 +158,9 @@
     </scenes>
     <resources>
         <image name="AS" width="691" height="1056"/>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="arrowshape.forward" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.clipboard" catalog="system" width="98" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

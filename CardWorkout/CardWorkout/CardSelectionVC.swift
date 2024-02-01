@@ -22,7 +22,12 @@ class CardSelectionVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        startStopButton.backgroundColor = .systemRed
+        startStopButton.setTitle("Stop!", for: .normal)
+        startStopButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         startStopButton.layer.cornerRadius = 8
+        
+        startTimer()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
