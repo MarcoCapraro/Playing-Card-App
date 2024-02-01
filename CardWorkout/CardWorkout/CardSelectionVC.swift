@@ -13,7 +13,6 @@ class CardSelectionVC: UIViewController {
     // Outlets: What gives you access to the object in code to make changes
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var startStopButton: UIButton!
-    @IBOutlet var buttons: [UIButton]!
     var cards: [UIImage] = Deck.allValues
     
     var timer: Timer!
@@ -23,9 +22,7 @@ class CardSelectionVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        for button in buttons {
-            button.layer.cornerRadius = 8
-        }
+        startStopButton.layer.cornerRadius = 8
     }
     
     override func viewWillDisappear(_ animated: Bool) {

@@ -85,9 +85,6 @@
                     <connections>
                         <outlet property="cardImageView" destination="sif-I5-rKb" id="GQh-GC-3eF"/>
                         <outlet property="startStopButton" destination="xIP-KB-spc" id="j2Z-e4-9HN"/>
-                        <outletCollection property="buttons" destination="xIP-KB-spc" collectionClass="NSMutableArray" id="2h5-xa-QkJ"/>
-                        <outletCollection property="buttons" destination="JCg-4y-aJ8" collectionClass="NSMutableArray" id="gt3-v7-J9O"/>
-                        <outletCollection property="buttons" destination="t1h-EO-NHZ" collectionClass="NSMutableArray" id="rgA-Iu-su2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -164,10 +161,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
